@@ -1,0 +1,29 @@
+#  spring.application.name=demo
+server:
+  port: 8686
+#  servlet:
+#      context-path: /resttemplatedemo
+
+spring:
+
+  datasource:
+    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:demodb
+    url: jdbc:h2:file:~/databaseH2/resttemplatedemodb
+#    url: jdbc:h2:file:~/databaseH2/demodb;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    username: sa
+    password:
+#
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+  data:
+    rest:
+      base-path=/api/v1

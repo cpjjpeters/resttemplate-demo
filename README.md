@@ -8,3 +8,7 @@ https://www.geeksforgeeks.org/spring-resttemplate/?ref=header_outind
 
 The latter is actually working
 using port 8686 !
+
+Frustrating: a / at the end of a URL gives errors. in the latter and probably everywhere
+
+baeldung tests not working

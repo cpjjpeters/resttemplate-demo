@@ -8,9 +8,9 @@ spring:
 
   datasource:
     driver-class-name: org.h2.Driver
-#    url: jdbc:h2:mem:demodb
-    url: jdbc:h2:file:~/databaseH2/resttemplatedemodb
-#    url: jdbc:h2:file:~/databaseH2/demodb;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+#    url: jdbc:h2:mem:resttemplatedemodb
+#    url: jdbc:h2:file:~/databaseH2/resttemplatedemodb
+    url: jdbc:h2:file:~/databaseH2/resttemplatedemodb;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
     username: sa
     password:
 #

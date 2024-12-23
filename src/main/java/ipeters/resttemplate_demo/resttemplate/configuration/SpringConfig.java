@@ -11,7 +11,7 @@ import org.springframework.context.annotation.DependsOn;
 
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan("peters.resttemplate_demo.resttemplate.configuration;")
+@ComponentScan("ipeters.resttemplate_demo.resttemplate.configuration;")
 public class SpringConfig {
 
     @Bean

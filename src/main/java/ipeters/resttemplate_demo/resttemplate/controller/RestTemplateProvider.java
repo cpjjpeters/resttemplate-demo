@@ -1,12 +1,13 @@
-package ipeters.resttemplate_demo.resttemplate.web.service;
+package ipeters.resttemplate_demo.resttemplate.controller;
 
-/* carlpeters created on 17/12/2024 inside the package - ipeters.resttemplate_demo.resttemplate.web.service */
 
-import ipeters.resttemplate_demo.resttemplate.web.dto.UserData;
+// Importing required classes
+import ipeters.resttemplate_demo.resttemplate.model.UserData;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-// Class
+@Slf4j
 public class RestTemplateProvider {
 
     // Creating an instance of RestTemplate class
@@ -15,16 +16,18 @@ public class RestTemplateProvider {
     // Method
     public UserData getUserData()
     {
+        log.debug("In RestTemplateProvider.getUserData()");
         return rest.getForObject(
-                "http://localhost:8686/RestApi/getData",
+                "http://localhost:8686/resttemplatedemo/RestApi/getData",
                 UserData.class);
     }
 
     // Method
     public ResponseEntity<UserData> post(UserData user)
     {
+        log.debug("In RestTemplateProvider.post()");
         return rest.postForEntity(
-                "http://localhost:8686/RestApi", user,
+                "http://localhost:8686/resttemplatedemo/RestApi", user,
                 UserData.class, "");
     }
 }

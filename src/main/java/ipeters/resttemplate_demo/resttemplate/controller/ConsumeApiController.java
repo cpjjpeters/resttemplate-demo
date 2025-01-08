@@ -2,8 +2,7 @@ package ipeters.resttemplate_demo.resttemplate.controller;
 // Java Program to illustrate Regular Controller
 // Consume REST API
 
-import ipeters.resttemplate_demo.resttemplate.web.dto.UserData;
-import ipeters.resttemplate_demo.resttemplate.web.service.RestTemplateProvider;
+import ipeters.resttemplate_demo.resttemplate.model.UserData;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

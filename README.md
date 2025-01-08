@@ -11,4 +11,4 @@ using port 8686 !
 
 Frustrating: a / at the end of a URL gives errors. in the latter and probably everywhere
 
-baeldung tests not working
+baeldung tests not working so removing the Baeldung part

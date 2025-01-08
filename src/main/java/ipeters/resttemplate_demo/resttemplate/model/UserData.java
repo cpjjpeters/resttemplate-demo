@@ -1,4 +1,4 @@
-package ipeters.resttemplate_demo.resttemplate.web.dto;
+package ipeters.resttemplate_demo.resttemplate.model;
 
 import lombok.Data;
 
